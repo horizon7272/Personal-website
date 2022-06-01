@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: 'Inter';
+}
+
+body {
+    /*background: rgb(1,103,185);
+    background: linear-gradient(90deg, rgba(1,103,185,1) 0%, rgba(0,181,199,1) 50%, rgba(0,224,237,1) 100%);*/
+    background-image: url("gradient.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.main-title {
+    margin: 25px;
+    color: white;
+    font-size: 2.5vw;
+}
+.home {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.67vw;
+    position: absolute;
+    top: 0%;
+    margin-top: 40px;
+    left: 40%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.home:hover {
+    color: lightskyblue;
+}
+.aboutme {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.67vw;
+    position: absolute;
+    top: 0%;
+    margin-top: 40px;
+    left: 55%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.aboutme:hover {
+    color: lightskyblue;
+}
+.myprojects {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.67vw;
+    position: absolute;
+    top: 0%;
+    margin-top: 40px;
+    left: 70%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.myprojects:hover {
+    color: lightskyblue;
+}
+.contact {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: lightskyblue;
+    font-size: 1.67vw;
+    position: absolute;
+    top: 0%;
+    margin-top: 40px;
+    left: 85%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.contact:hover {
+    color: lightskyblue;
+}
+.aboutme-title {
+    color: white;
+    font-weight: lighter;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 35%;
+    right: 62%;
+    animation: fadeIn 5s ease;
+}
+.aboutme-text {
+    color: white;
+    font-weight: lighter;
+    font-size: 1.4583vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 5s ease;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    body, html {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .main-title {
+        font-size: 2em;
+    }
+    .main-menu {
+        position: absolute;
+        top: 10%;
+        left: 5.5%;
+        width: 100%;
+    }
+    .home {
+        font-size: 1.25em;
+        position: absolute;
+        left: 0%;
+    }
+    .aboutme {
+        position: absolute;
+        left: 17.5%;
+        font-size: 1.25em;
+    }
+    .myprojects {
+        position: absolute;
+        left: 43.5%;
+        font-size: 1.25em;
+    }
+    .contact {
+        position: absolute;
+        left: 65.5%;
+        font-size: 1.25em;
+    }
+    .aboutme-title {
+        font-size: 2em;
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+    .aboutme-text {
+        font-size: 1em;
+        position: absolute;
+        top: 55%;
+    }
+}
